@@ -10,5 +10,17 @@ mkdir ~/Pictures/Screenshots;defaults write com.apple.screencapture location ~/P
 # Enable Focus follows mouse
 defaults write com.apple.Terminal FocusFollowsMouse -string YES
 
-#Prevent TM asking to use new disks
-defaults write /Library/Preferences/com.apple.TimeMachine DoNotOfferNewDisksForBackup -bool true
+#show full path in finder title
+defaults write com.apple.finder _FXShowPosixPathInTitle -bool true
+
+#unhide ~/Library
+chflags nohidden ~/Library
+
+#Increase recent places to 10
+defaults write -g NSNavRecentPlacesLimit -int 10 && killall Finder
+
+
+
+#Check for software updated daily
+defaults write com.apple.SoftwareUpdate ScheduleFrequency -int 1
+
