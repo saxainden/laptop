@@ -123,6 +123,7 @@ cask "iterm2"
 cask "teamviewer"
 cask "clamxav"
 cask "calibre"
+cask "1password"
 
 cask "caskroom/fonts/font-fira-code"
 cask "caskroom/fonts/font-fira-mono-for-powerline"
@@ -131,4 +132,3 @@ mas "Microsoft Remote Desktop", id: 715768417
 mas "Pocket", id: 568494494
 mas "Library Books", id: 412822911
 mas "Wunderlist", id: 410628904
-mas "1Password", id: 1333542190
