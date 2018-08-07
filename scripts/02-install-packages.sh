@@ -8,3 +8,5 @@ if [[ ! $(brew bundle check) ]]; then
 
   cd -
 fi
+
+brew install macvim --HEAD --with-cscope --with-lua --with-override-system-vim --with-luajit --with-python
