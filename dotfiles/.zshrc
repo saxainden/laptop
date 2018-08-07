@@ -46,18 +46,10 @@ chmod +x ~/.laptop/scripts/*.sh
 for script in ~/.laptop/scripts/20-*.sh; do source $script; done
 for script in ~/.laptop/scripts/30-*.sh; do screen -dm -S Shared $script; done
 
-[ -f /Users/casey/.travis/travis.sh ] && source /Users/casey/.travis/travis.sh
-
 curl -s https://api.github.com/zen | sed 's/\n//'
 
 # when c --calendar_today_style="bold,fgyellow"
 when w --no-header --no-paging
 
 autoload -U promptinit; promptinit
-prompt spaceship
 
-
-source "/Users/casey/.oh-my-zsh/custom/themes/spaceship.zsh-theme"
-
-
-source "/Users/casey/.oh-my-zsh/custom/themes/spaceship.zsh-theme"
